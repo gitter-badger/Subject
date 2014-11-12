@@ -12,7 +12,7 @@ class User(object):
 		self.__nacionalidad = nacionalidad
 		self.__f_nacimiento = f_nacimiento
 		self.__rating = rating
-
+	
 	def get_nombre(self):
 		return self.nombre
 
@@ -25,12 +25,17 @@ class User(object):
 	def get_nick_name(self):
 		return self.nick_name
 
-	def get_nick_name(self):
-		return self.nick_name
+	def get_foto(self):
+		return self.foto
 
-	def get_nick_name(self):
-		return self.nick_name
+	def get_escuela(self):
+		return self.escuela
+	
+	def get_nacionalidad(self):
+		return self.nacionalidad
 
-	def get_nick_name(self):
-		return self.nick_name
-
+        def get_f_nacimiento(self):
+            return self.f_nacimiento
+            
+        def get_rating(self):
+            return self.rating
