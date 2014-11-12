@@ -5,6 +5,9 @@ class Pais(object):
 		self.id = id
 		self.__pais = pais
 		self.__nacionalidad = nacionalidad
+	
+	def __str__(self):
+	   return self.__pais
 
 	def get_pais(self):
 		return self.__pais
