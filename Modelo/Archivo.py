@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 class Archivo(object):
     
-    def __init__(self, url, id_usuario, id_grupo):
+    def __init__(self, id, url, id_usuario, id_grupo):
         '''
         Crea una instancia de tipo archivo.
         url: el url con la ubicacion del archivo
@@ -9,10 +8,18 @@ class Archivo(object):
         id_grupo: el id del grupo al que pertenece el archivo o 0 si no 
                   pertenece a ningun grupo
         '''
+        self.id = id
         self.url = url
         self.id_usuario = id_usuario
         self.id_grupo = id_grupo
     
+    def get_id(self):
+        '''
+        Regresa el id del archivo en la tabla de archivos.
+        returns: el id del archivo en la base
+        '''
+        return self.id
+
     def get_url(self):
         '''
         Regresa el url con la ubicacion del archivo.
